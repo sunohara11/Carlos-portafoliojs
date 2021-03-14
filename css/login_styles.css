@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -26,6 +27,46 @@ body {
   width: 155px;
   margin-top: 5px;
   margin-left: 15px;
+}
+
+.header__menu {
+  margin-right: 30px;
+}
+
+.header__menu--profile {
+  color: #1e4e57;
+  margin-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.header__menu--profile img {
+  margin-right: 8px;
+  width: 45px;
+  /*tamaño para que no abaque el profile : 40px*/
+}
+
+.header__menu--profile p {
+  margin-right: 0px;
+}
+
+.header__menu--profile a {
+  margin-right: 0px;
+  color: #1d3557;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.header__menu--profile a:hover {
+  color: #09796b;
+  text-decoration: underline;
 }
 
 /*estilos de elementos login*/
