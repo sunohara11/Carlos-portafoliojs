@@ -435,13 +435,6 @@ Estilos para la section main //h2
 }
 
 @media only screen and (max-width: 600px) {
-  /* .login__container{
-        background-color: transparent;
-        border: none;
-        padding: 0px;
-        width: 85%;
-        box-shadow: none;
-    }*/
   .promotion__container {
     width: 100%;
     height: 50vh;
@@ -504,6 +497,27 @@ Estilos para la section main //h2
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+  }
+  /*centrar titulos en movil*/
+  .categories__title {
+    padding-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  /*carousel*/
+  .carousel {
+    width: 93%;
+    margin: 0 15px;
+    overflow-x: scroll;
+    padding: 30px 0px;
+    position: relative;
   }
 }
 /*# sourceMappingURL=index.css.map */
