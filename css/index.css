@@ -104,7 +104,7 @@ Estilos para la section main //h2
           align-items: center;
 }
 
-.main__title {
+.main__title, .downloadcv h2 {
   color: #1e4e57;
   font-size: 25px;
   text-align: center;
@@ -233,7 +233,7 @@ Estilos para la section main //h2
   padding: 8% 20% 8% 20%;
 }
 
-.boton__personalizado--let {
+.boton__personalizado--let, .downloadcv__item--botton {
   text-align: center;
   text-decoration: none;
   padding: 10px;
@@ -259,9 +259,72 @@ Estilos para la section main //h2
           align-items: center;
 }
 
-.boton__personalizado--let:hover {
+.boton__personalizado--let:hover, .downloadcv__item--botton:hover, .downloadcv__item--botton :hover {
   color: #1883ba;
   background-color: #ffffff;
+}
+
+/*para el cv*/
+.downloadcv {
+  width: 100%;
+  margin-top: -30px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.downloadcv p {
+  text-align: center;
+  padding: 8% 20% 8% 20%;
+}
+
+.downloadcv__item {
+  width: 100%;
+  max-width: 1240px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.downloadcv__item img {
+  width: 50%;
+  border-radius: 15px 15px;
+}
+
+.downloadcv__item div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 /*estilos para el carrousel*/
@@ -542,6 +605,22 @@ Estilos para la section main //h2
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  /*descargar*/
+  .downloadcv__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   /*centrar titulos en movil*/
   .categories__title {

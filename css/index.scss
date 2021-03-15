@@ -198,6 +198,51 @@ Estilos para la section main //h2
   }
 
 
+/*para el cv*/
+.downloadcv{   
+    width: 100%;
+    margin-top: -30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+    h2{
+        @extend .main__title;
+    }
+    p{
+        text-align: center;
+        padding: 8% 20% 8% 20%;
+    }
+}
+.downloadcv__item {
+    width: 100%;
+    max-width: 1240px;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+
+.downloadcv__item img{
+    width: 50%;
+    border-radius: 15px 15px;
+}
+.downloadcv__item div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
+.downloadcv__item--botton{
+    @extend .boton__personalizado--let;
+    :hover{
+        @extend .boton__personalizado--let:hover;
+    }
+}
+
+
 /*estilos para el carrousel*/
 .categories__title {
     color: rgb(30, 78, 87);
@@ -427,7 +472,14 @@ Estilos para la section main //h2
         align-items: center;
     }
     
-    
+    /*descargar*/
+    .downloadcv__item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;  
+        flex-direction: column;
+    }
+
     /*centrar titulos en movil*/
     .categories__title{
         padding-left: 0px;
