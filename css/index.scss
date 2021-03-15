@@ -151,28 +151,6 @@ Estilos para la section main //h2
     //border: 1px red solid;
     text-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3), 0px -5px 8px rgba(0, 0, 0, 0.3); 
 }
-
-/*boton*/
-.boton_personalizado{
-    text-decoration: none;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 20px;
-    color: #ffffff;
-    background-color: #1883ba;
-    border-radius: 6px;
-    border: 2px solid #0016b0;
-    padding: 0px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .boton_personalizado:hover{
-    color: #1883ba;
-    background-color: #ffffff;
-  }
-
 .promotion__container--item button{
     width: 35%;
     background-color: rgb(65, 148, 148);
@@ -190,6 +168,33 @@ Estilos para la section main //h2
     color: white;
 }
 
+/*boton*/
+
+.boton__personalizado p{
+    text-align: center;
+    padding-right: 300px;
+    padding-left: 300px;
+}
+.boton__personalizado--let{
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #1883ba;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .boton__personalizado--let:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
 
 
 /*estilos para el carrousel*/
@@ -393,9 +398,26 @@ Estilos para la section main //h2
         
     }
     .promotion__container--item div > h2{
-       text-align: center;
+        font-size: 60px;
+        text-align: center;
     }
 
+    /*boton pers*/
+    /*.boton__ersonalizado{
+        text-align: center;
+    }*/
+    .boton__personalizado p{
+        
+        text-align: center;
+        padding-right: 50px;
+        padding-left: 50px;
+
+    }
+    .boton_personalizado a{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .footer{
         align-items: flex-start;
         flex-direction: column;
